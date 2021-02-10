@@ -86,7 +86,7 @@ find.solution <- function(omega.start, x, y, tol=1e-3) {
   g.new = g(omega.upd,x,y)
   counter=1
   while(mean(abs(omega.upd-omega.old))>tol | mean(abs(g.new-g.old))>tol) {
-    print(c(counter, omega.upd))
+    print(counter)
     flush.console()
     
     omega.old = omega.upd
